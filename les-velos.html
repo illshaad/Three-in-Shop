@@ -3,67 +3,83 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nos vélo</title>
+    <title>Nos vélos</title>
     <link rel="stylesheet" href="three-in-shop.css">
-  
    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
 </head>
 
     <body>
-        <div class="nav-bars">
-            <ul>
-              <li class="selected"><a href="index.html">Le magasin</a></li>
-              <li><a href="les-velos.html">Les vélos</a></li>
-              <li>Les Marques</li>
-              <li><a href="tarifs-atelier.html">L'atelier</a></li>
-              <li>Contact</li>
-             </ul>
-          </div>
-          <div class="logo-velo"></div>
+            <div id="nav-bars">
+                    <div id="menu">
+                      <ul>
+                        <li class="selected"><a href="index.html">Le magasin</a></li>
+                        <li><a href="les-velos.html">Les vélos</a></li>
+                        <li>Les Marques</li>
+                        <li><a href="tarifs-atelier.html">L'atelier</a></li>
+                        <li>Contact</li>
+                      </ul>
+                    </div>
+                    <div class="logo-velo">
+                     <img src="image/logo.png" alt=""> 
+                    </div>
+                  </div>
 
-        
-            <div class="first-titre">DÉCOUVREZ NOS VÉLOS</div>
-            <div class="text-sous-titre">La Maison de la Bicyclette à Angers vous propose une large gamme de cycles :
-                    vélos électriques, vélos de ville, vélos de randonnée, vélos tous chemins, triporteurs et biporteurs, vélos de route, course, vélos tous terrains, vélos pliants, tandems,
-                    vélos atypiques, vélos pour enfants...
-                    Quelle que soit votre demande, nous serons à votre écoute et vous conseillerons dans l'achat de votre vélo en ayant à cœur de répondre parfaitement à vos besoins.
-                    Nous vous proposerons des vélos de qualité, reconnus pour leur technicité et leur longévité, au meilleur prix.
-                    
-                    Tous les modèles ne sont pas visibles sur notre site internet, les commandes sont possibles directement en magasin.</p>
-                </div>
+                  <div class="first-titre">NOS VÉLOS</div>
+        <div class="text-sous-titre">La Maison de la Bicyclette à Angers vous propose une large gamme de cycles :
+                vélos électriques, vélos de ville, vélos de randonnée, vélos tous chemins, triporteurs et biporteurs, vélos de route, course, vélos tous terrains, vélos pliants, tandems,
+                vélos atypiques, vélos pour enfants...
+                Quelle que soit votre demande, nous serons à votre écoute et vous conseillerons dans l'achat de votre vélo en ayant à cœur de répondre parfaitement à vos besoins.
+                Nous vous proposerons des vélos de qualité, reconnus pour leur technicité et leur longévité, au meilleur prix.
+                
+                Tous les modèles ne sont pas visibles sur notre site internet, les commandes sont possibles directement en magasin.
+        </div>
 
-                <div class="first-border"></div>
+        <div class="first-border"></div>
+        <div class="first-titre">DÉCOUVREZ NOS VÉLOS</div>
 
+        <div class="background-container-two">
+            <div class="opacité">
                 <div class="container">
                     <div class="un">
-                        <a href=""><div class="deux">Vélo de Ville</a></div>
+                        <a href=""><div class="deux">Vélo de Ville</div></a>
                     </div>
                     <div class="trois">
-                        <a href="velo-route.html"><div class="quatre">Vélo de route</a></div>
+                        <a href="velo-route.html"><div class="quatre">Vélo de route</div></a>
                     </div>
 
                     <div class="cinq">
-                            <a href=""><div class="six">Vélo Electriques</a></div>
-                        </div>
+                        <a href=""><div class="six">Vélo Electriques</div></a>
                     </div>
+                </div>
                 <div class="container">
-                        <div class="sept">
-                            <a href=""><div class="huit">VTT</a></div>
-                        </div>
-
-                        <div class="neuf">
-                                <a href=""><div class="dix">Vélo d'occasion</a></div>
-                            </div>
-
+                    <div class="sept">
+                        <a href=""><div class="huit">VTT</div></a>
                     </div>
 
-                   <div class="footer">
-    <div class="google"></div>
-    <dib class="logo-fin"></dib>
-    <div class="adress">35 Avenue Outrebon, 93250 Villemomble</div>
-  </div>
+                    <div class="neuf">
+                        <a href=""><div class="dix">Vélo d'occasion</div></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="first-border"></div>
+    <div class="footer-general">
+            <div id="my_osm_widget_map"></div>
+        
+        <div class="border-left-separation"></div>
+        <div class="footer">
+          <div class="logo-fin"></div>
+          <div class="adresse-one">Nous trouver</div>
+          <div class="adress">35 Avenue Outrebon<br>93250 Villemomble</div>
+          <div class="adress">01 58 66 10 95</div>
+        </div>
+      </div>
       
-
+        <script type="text/javascript" src="stage.js"></script>
+        <!-- <script type="text/javascript" src="nav-bar-effect.js"></script> -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     </body>
 </html>

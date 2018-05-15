@@ -4,26 +4,34 @@
         <title>Les tarifs</title>
         <link rel="stylesheet" href="three-in-shop.css">
         <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+        <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
     </head>
     
     <body>
-        <div class="nav-bars">
-            <ul>
-              <li class="selected"><a href="index.html">Le magasin</a></li>
-              <li><a href="les-velos.html">Les vélos</a></li>
-              <li>Les Marques</li>
-              <li><a href="tarifs-atelier.html">L'atelier</a></li>
-              <li>Contact</li>
-             </ul>
-          </div>
-          <div class="logo-velo"></div>
+            <div id="nav-bars">
+                    <div id="menu">
+                      <ul>
+                        <li class="selected"><a href="index.html">Le magasin</a></li>
+                        <li><a href="les-velos.html">Les vélos</a></li>
+                        <li>Les Marques</li>
+                        <li><a href="tarifs-atelier.html">L'atelier</a></li>
+                        <li>Contact</li>
+                      </ul>
+                    </div>
+                    <div class="logo-velo">
+                     <img src="image/logo.png" alt=""> 
+                    </div>
+                  </div>
 
        
-        <div class="first-titre">LES TARIFS FORFAITS</div>
-        <div class="text-sous-titre">La Maison de la Bicycletn et la réparation de votre vélo à tout momentLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momen</div>
+        <div class="first-titre">NOS TARIFS</div>
+            <div class="text-sous-titre">La Maison de la Bicycletn et la réparation de votre vélo à tout momentLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momenLa Maison de la Bicycletn et la réparation de votre vélo à tout momen</div>
+
         <div class="first-border"></div>
 
+        <div class="first-titre">NOS TARIFS FORFAITAIRE</div>
         <div class="container-forfait">
             <div class="premier-forfait">Montage vélo complet
                 <div class="prix">160€ </div>
@@ -35,17 +43,15 @@
                 <div class="explication">Réglage freins, dérailleurs, lubrification chaine, contrôle usure patins ou plaquttes, contrôle usure chaîne, vérification serrage, dévoillage des roues, pression pneus</div>
                     <div class="prix">55€</div>
             </div>  
-        </div>
-
-        <div class="second-container-forfait">
             <div class="quatrieme-forfait">Révision annuelle
                 <div class="explication">Révision Standard + changement câble et gaines dér/freins, purge de freins</div>
                      <div class="prix">90€</div>
-        </div>  
-        <div class="cinquieme-forfait">Préparation vélo acheté hors magasin
-            <div class="prix">120€</div>
+            </div>  
+            <div class="cinquieme-forfait">Préparation vélo acheté hors magasin
+                <div class="prix">120€</div>
             </div> 
         </div>
+        
 
         <div class="first-titre">LES TARIFS EN DETAIL</div>
 
@@ -545,13 +551,24 @@
                    </table>
                 </div>
             </div>
-        <div class="footer">
-        <div class="google"></div>
-        <div class="logo-fin"></div>
-        <div class="adress">35 Avenue Outrebon, 93250 Villemomble</div>
-  </div>
-      
+            <div class="first-border"></div>
 
+           <div class="footer-general">
+      <div id="my_osm_widget_map"></div>
+  
+  <div class="border-left-separation"></div>
+  <div class="footer">
+    <div class="logo-fin"></div>
+    <div class="adresse-one">Nous trouver</div>
+    <div class="adress">35 Avenue Outrebon<br>93250 Villemomble</div>
+    <div class="adress">01 58 66 10 95</div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="stage.js"></script>
+  <!-- <script type="text/javascript" src="nav-bar-effect.js"></script> -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   
     </body>
     </html>
