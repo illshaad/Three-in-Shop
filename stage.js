@@ -1,16 +1,14 @@
-
-
 //map-footer//
 
 var mymap = L.map('my_osm_widget_map', { /* use the same name as your <div id=""> */
   center: [48.887284, 2.510894], /* set GPS Coordinates */
-  zoom: 15, /* define the zoom level */
-  zoomControl: false, /* false = no zoom control buttons displayed */
-  scrollWheelZoom: false /* false = scrolling zoom on the map is locked */
+  zoom: 17, /* define the zoom level */
+  zoomControl:true, /* false = no zoom control buttons displayed */
+  scrollWheelZoom: true/* false = scrolling zoom on the map is locked */
 });
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2hhZGQiLCJhIjoiY2poNmhmeG81MWExaDJ3bWp4enI5dGtuZSJ9._jQSVPAZCTQJmHGkmA1p-w', { /* set your personal MapBox Access Token */
-  maxZoom: 17, /* zoom limit of the map */
+  maxZoom: 20, /* zoom limit of the map */
  
     id: 'mapbox.streets' /* mapbox.light / dark / streets / outdoors / satellite */
 }).addTo(mymap);

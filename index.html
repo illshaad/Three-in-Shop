@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Three in shop</title>
+    <title>Three in shop v0.8</title>
+    <link rel="stylesheet" href="tachyon.css">
     <link rel="stylesheet" href="three-in-shop.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
     <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
@@ -12,92 +14,131 @@
 </head>
 <body>
     
-
-
-    <!-- Slider -->
-<div class="content" style="width:100%">
-  <img class="mySlides" src="./image/photo1.jpg" style="width:100%">
-  <img class="mySlides" src="./image/photo2.jpeg" style="width:100%">
-  <img class="mySlides" src="./image/photo3.jpeg" style="width:100%">
-</div>
-  
   <!-- NAV BARS -->
-  <div id="nav-bars">
-    <div id="menu">
-      <ul>
-        <li class="selected"><a href="index.html">Le magasin</a></li>
-        <li><a href="les-velos.html">Les vélos</a></li>
-        <li>Les Marques</li>
-        <li><a href="tarifs-atelier.html">L'atelier</a></li>
-        <li>Contact</li>
-      </ul>
-    </div>
-    <div class="logo-velo">
-     <img src="image/logo.png" alt=""> 
-    </div>
-  </div>
-  
-
-  <div class="first-border"></div>
-
-  <div class="text-sous-titre">Cum cane silua lupum sociat.  Lupus inquit: Amena
-      Pelle nites, in te copia sancta patet.
-      Pro uerbis dat uerba canis: Me ditat herilis
-      Gracia, cum domino me cibat ipsa domus.
-      Nocte uigil fures latratu nuncio, tutam
-      Seruo domum.  michi dat culmus in edo thorum.
-      Hec mouet ore lupus: Cupio me uiuere tecum,
-      Communem capiant ocia nostra cibum.
-      Reddit uerba canis: Cupio te uiuere mecum.
-      Vna dabit nobis mensa manusque cibum.
-      Ille fauet sequiturque canem, gutturque caninum
-      Respicit et querit: Cur cecidere pili?
-      Inquit: Ne ualeam morsu peccare diurno,
-      Vincla diurna fero, nocte iubente uagor.
-      Reddet uerba lupus: Non est michi copia tanti,</div>
-
-  <div class="first-border"></div>
-  
-  <div class="logo">
-    <div class="logo1"></div>
-    <div class="logo2"></div>
-    <div class="logo3"></div>
-  </div>
-
-  <div class="titre-sous-logo">
-    <h3 class="test">CONSEIL ET VENTE</h3>
-    <h3 class="test">ENTRETIEN ET REPARATION</h3>
-    <h3 class="test">EQUIPEMENT</h3>
-  </div>
-
-  <div class="minitext-sous-logo">
-    <p>Nous vous conseillons sur nos gammes de vélos de tous types, selon vos envies et vos attentes. Comptez sur notre expertise pour repartir avec un vélo de qualité adapté à votre besoin.</p>
-    <p>La Maison de la Bicyclette dispose d’un atelier polyvalent et d’un stock conséquent de pièces et d’accessoires pour assurer l’entretien et la réparation de votre vélo à tout moment..</p>
-    <p>Dans notre magasin, un large choix d’équipements pour votre vélo pour répondre à vos besoins. Vous ne trouvez pas l’accessoire recherché ? Nous pouvons le commander très rapidement.</p>
-  </div>
-
-  <div class="first-border"></div>
-
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Three-in-shop</a>
     
-  <div class="footer-general">
-      <div id="my_osm_widget_map"></div>
-  
-  <div class="border-left-separation"></div>
-  <div class="footer">
-    <div class="logo-fin"></div>
-    <div class="adresse-one">Nous trouver</div>
-    <div class="adress">35 Avenue Outrebon<br>93250 Villemomble</div>
-    <div class="adress">01 58 66 10 95</div>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Magasin</a>
+          </li>
+          <li class="nav-item">
+            <a class ="nav-link" href="les-velos.html">Vélos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tarifs-atelier.html">Atelier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> 
+        </ul>
+      </div> 
+  </nav>
+
+  <div class="content" style="width:100%">
+        <img class="mySlides" src="./image/photo1.jpg" style="width:100%">
+        <img class="mySlides" src="./image/photo2.jpeg" style="width:100%">
+        <img class="mySlides" src="./image/photo3.jpeg" style="width:100%">
+  </div>
+        
+  <div class="container-fluid">
+    <div class="first-border"></div>
+
+    <div class="text-sous-titre">Cum cane silua lupum sociat.  Lupus inquit: Amena
+        Pelle nites, in te copia sancta patet.
+        Pro uerbis dat uerba canis: Me ditat herilis
+        Gracia, cum domino me cibat ipsa domus.
+        Nocte uigil fures latratu nuncio, tutam
+        Seruo domum.  michi dat culmus in edo thorum.
+        Hec mouet ore lupus: Cupio me uiuere tecum,
+        Communem capiant ocia nostra cibum.
+        Reddit uerba canis: Cupio te uiuere mecum.
+        Vna dabit nobis mensa manusque cibum.
+        Ille fauet sequiturque canem, gutturque caninum
+        Respicit et querit: Cur cecidere pili?
+        Inquit: Ne ualeam morsu peccare diurno,
+        Vincla diurna fero, nocte iubente uagor.
+        Reddet uerba lupus: Non est michi copia tanti.
+      </div>
+  </div>
+
+  <div class="first-border"></div>
+  <br/><br/>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4" >
+      <div class="logo1 mx-auto d-block"></div>
+      <h3 class="test">CONSEIL ET VENTE</h3>
+      <br/>
+      <p>Nous vous conseillons sur nos gammes de vélos de tous types, selon vos envies et vos attentes. Comptez sur notre expertise pour repartir avec un vélo de qualité adapté à votre besoin.</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="logo2 mx-auto d-block" ></div>
+      <h3 class="test">ENTRETIEN ET REPARATION</h3>
+      <br/>
+      <p>La Maison de la Bicyclette dispose d’un atelier polyvalent et d’un stock conséquent de pièces et d’accessoires pour assurer l’entretien et la réparation de votre vélo à tout moment..</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="logo3 mx-auto d-block"></div>
+      <h3 class="test">EQUIPEMENT</h3>
+      <br/>
+      <p>Dans notre magasin, un large choix d’équipements pour votre vélo pour répondre à vos besoins. Vous ne trouvez pas l’accessoire recherché ? Nous pouvons le commander très rapidement.</p>
+    </div>
   </div>
 </div>
 
+<div class="first-border"></div>
 
+<div class="container-fluid">
+  <div class="titre-marque">Les marques de la boutique</div>
+  <br/>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-3 img-thumbnail">
+          <div class="photo-merida mx-auto d-block"></div>
+      </div>
+      <div class="col-lg-3 img-thumbnail">
+          <div class="photo-peugeot mx-auto d-block"></div>
+      </div>
+      <div class="col-lg-3 img-thumbnail" >
+        <div class="photo-bh mx-auto d-block"></div>
+      </div>
+      <div class="col-lg-3 img-thumbnail">
+          <div class="photo-gitane mx-auto d-block"></div>
+      </div>
+    </div>
+</div>
+
+
+<div class="first-border"></div>
+<br/>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-6">
+        <div id="my_osm_widget_map"></div>
+      </div>
+      <div class="col-sm-6" style="background-color:whitesmoke;">
+        <br/><br/>
+        <div class="adresse-one">Nous trouver</div>
+        <div class="adress">35 Avenue Outrebon<br>93250 Villemomble</div>
+        <div class="adress">01 58 66 10 95</div>
+      </div>
+    </div>
+  </div>
   
-
-
-  <script type="text/javascript" src="stage.js"></script>
-  <!-- <script type="text/javascript" src="nav-bar-effect.js"></script> -->
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="stage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+
+*{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
     
@@ -23,7 +27,7 @@ a:hover{
     position: fixed;
     font-family: 'Tajawal', sans-serif;
     background-color:black;
-    opacity: 0.6;
+    opacity: 0.7;
     height: 14%;
     color: white;
     top: 0;
@@ -59,14 +63,16 @@ ul{
     display: flex;
     text-align: center;
     justify-content: space-around;
-    margin-top: 4%;
-    /* text-indent: 2%; */
-    text-shadow: 2px 2px 2px grey;
+    margin-top: 4%; 
 }
 
  
 .logo-velo{  
     margin: 0 60px;  
+}
+
+.logo-velo > img{
+    width: 150px;
 }
     
 .first-titre{
@@ -92,15 +98,13 @@ ul{
 .first-border {
     margin-right: 45%;
     border: 1px solid #F3524E;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 45%;
 }
 
 .text{
-    margin-left: 20%;
+   
     text-align: center;
-    margin-top: 8%;
-    margin-right: 20%;
     font-size: 13px;
     font-family: 'Tajawal', sans-serif;
 }
@@ -108,24 +112,27 @@ ul{
 .logo{
     display: flex;
     justify-content: space-around;
-    margin-top: 10%
+    margin-top: 10%;
+    background-color: whitesmoke;
+    padding-top: 5%
 }
 .logo1{
-    background-image: url(./image/like.png);
+    background-image: url(./image/logo1.png);
     background-repeat:no-repeat; 
     width: 100px;
     height: 100px;
 }
 
 .logo2{
-    background-image: url(./image/tools.png);
+    background-image: url(./image/logo3.png);
     background-repeat:no-repeat; 
     width: 100px;
     height: 100px;
+    margin-left: 1%;
 }
 
 .logo3{
-    background-image: url(./image/ok.png);
+    background-image: url(./image/logo2.png);
     background-repeat:no-repeat; 
     width: 100px;
     height: 100px;
@@ -134,29 +141,85 @@ ul{
 .titre-sous-logo{
     display: flex;
     justify-content: space-around;
-    margin-right: 5%;
+    padding-right: 5%;
     margin-top: -2%;
+    background-color: whitesmoke;
 }
 
 .test{
     font-size: 20px;
     font-family: 'Tajawal', sans-serif;
+    text-align: center;
 }
 
 .minitext-sous-logo{
     display: flex;
     justify-content: space-around;
+    background-color: whitesmoke;
+    padding-bottom: 10%;
    
 }
-
-p{
+#conseil{
+    margin-left: 20px
+}
+.minitext-sous-logo > p{
+    
     text-align: center;
     font-family: 'Tajawal', sans-serif;
-    width: 25%;
+    width: 23%;
+    border: 2px solid black;
+    height: 150px;
+    box-shadow: 2px -3px 3px -2px black;
+    padding-top: 50px;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
    
    
 }
 
+.titre-marque{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.photo-marques{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.photo-merida{
+    background-image: url(./image/merida.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 200px;
+    height: 100px;
+}
+
+.photo-peugeot{
+    background-image: url(./image/peugeot.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100px;
+    height: 100px;
+}
+.photo-bh{
+    background-image: url(./image/bh.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 180px;
+    height: 100px;
+}
+.photo-gitane{
+    background-image: url(./image/gitane.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 180px;
+    height: 100px;
+}
 /*page-les-vélos*/
 
 .background-container-two{
@@ -167,14 +230,13 @@ p{
     background-size: cover;
 }
 .container{
+
     display: flex;
     justify-content: center;
     margin-top: 2%;
     padding-top: 3%;
    
 }
-
-
 
 .un{
     background-image: url(./image/photo-velo-ville.jpeg);
@@ -406,44 +468,60 @@ p{
 .titre-liste{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
+    
+   
 }
 
-.liste-red{
-    border: 1px solid #F3524E;
-    background-color: #F3524E;
-    border-radius: 3px;
-    font-size: 20px;
-    color: white;
-    width: 17%;
-    height: 8%;
-    text-align: center;
-    padding-top: 3%;
-    font-family: 'Tajawal', sans-serif;
+.titre-liste-test{
+    display: flex;
+    justify-content: center;
     
 }
 
-.liste{
-    font-family: 'Tajawal', sans-serif;
-    border: 1px solid whitesmoke;
-    background-color: whitesmoke;
-    border-radius: 3px;
+
+.liste-red{
+    
+    
     font-size: 20px;
-    width: 17%;
-    height: 8%;
+    color: white;
+    width: 12%;
+    height: 10%;
     text-align: center;
     padding-top: 3%;
+    font-family: 'Tajawal', sans-serif;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 2px 2px 0px black;
+    
+    
+}
+.liste-red > div > p, .liste > div > p{
+    color: black;
+    text-align: center;
+}
+.liste{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    width: 17%;
+    height: 10%;
+    text-align: center;
+    padding-top: 3%;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 2px 2px 0px black;
     
     
 }
 
 .liste-red a{
     color: black;
+
 }
 
-.liste-red a:hover{
+.liste-red:hover{
     text-decoration: none;
-    color: white;
+    background-color: #F3524E;
+    width: 14%;
+    transition: all 0.5s;
     
 }
 
@@ -451,11 +529,11 @@ p{
     color: black;
 }
 
-.liste a:hover{
+.liste:hover{
     text-decoration: none;
-    color: red;
-   
-
+    background-color: #F3524E;
+    transition: all 1.0s;
+    width: 12%;
 }
 
 .container-principal{
@@ -485,6 +563,7 @@ border-bottom:2px solid antiquewhite;
 .container-principal{
     display: flex;
     justify-content: space-around;
+    margin-top: 10%;
 }
 
 /*partie-forfait*/
@@ -494,27 +573,167 @@ border-bottom:2px solid antiquewhite;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
-    font-size: 25px;
+    font-size: 20px;
+    padding-top: 5%;
+    font-family: 'Tajawal', sans-serif;   
+}
+
+.container-forfait-two{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-family: 'Tajawal', sans-serif;
-    background-color: whitesmoke;
-    height: 300px;
-    padding-top: 10%;
-    border-top: 2px solid #F3524E;
-    border-bottom: 2px solid #F3524E
+    font-size: 20px;
+}
+
+ .nos{
+     background-color: whitesmoke;
+     height: 120px;
+     padding-top: 20px;
+     width: 20%;
+     box-shadow: 0px 2px 2px 0px black;
+     border: 1px solid whitesmoke;
+ }
+ .nos > img{
+     width: 200px;
+ }
+
+ .premier-forfait , .deuxieme-forfait, .troisieme-forfait, .quatrieme-forfait, .cinquieme-forfait{
+   
+    height: 120px;
+    padding-top: 20px;
+    width: 20%;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 2px 2px 0px black;
+    transition: all 1.0s;
+    ;
+ }
+.premier-forfait:hover , .deuxieme-forfait:hover, .troisieme-forfait:hover, .quatrieme-forfait:hover, .cinquieme-forfait:hover{
+     background-color: #F3524E;
+     /* width: 18%;
+     height:13%; */
+     transition: all 1.0s;
+ }
+
+ .premier-forfait:hover , .deuxieme-forfait:hover, .troisieme-forfait:hover ,.quatrieme-forfait:hover,.cinquieme-forfait:hover {
+    font-size: 20px;
+    transform: scale(1.3, 1.3);
+    
 }
 
 .explication{
     text-align: center;
-    width: 300px;
-    font-size: 13px;
+    width: 200px;
+    font-size: 10px;
+    margin-left: 15%;
     
 }
 
 .prix{
     margin-top: 5%;
+    font-size: 14px;
     font-family: 'Tajawal', sans-serif;
-    color: #F3524E;
+   
+}
+/*contact*/
+
+.contact{
+    font-size: 50px;
+    font-family: 'Tajawal', sans-serif;
+    margin-top: 8%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: black;
+    color: white;
+    
+}
+.container-contacter{
+    display: flex;
+}
+
+.facebook{
+   
+    background-image: url(./image/facebook.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-top: 2%;
+}
+
+.noshoraires{
+   
+    font-family: 'Tajawal', sans-serif;
+    position: absolute;
+    left: 39%;
+    font-size: 40px;
+    top: 50%;
+    background-color: #F3524E;
+    color: whitesmoke;
+    width: 18%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+.logo-mail{
+    background-repeat: no-repeat;
+    background-image: url(./image/mail.png);
+}
+
+.horaires{
+    font-family: 'Tajawal', sans-serif;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 15%;
+    font-size: 20px;
+}
+.logo-map{
+    
+    background-repeat: no-repeat;
+    background-image: url(./image/map.png);
+}
+
+.information-contact{
+   
+    font-size: 25px;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    width: 650px;
+    padding-top: 2%;
+    margin-left: 6%;
+    
+   
+}
+.logo-tel{
+    background-repeat:no-repeat; 
+    width: 200px;
+    height: 50px;
+    margin-top: 2%;
+    background-image: url(./image/phone.png)
+}
+
+.tel{
+    margin-left: 20%;
+   
+   font-family: 'Tajawal', sans-serif;
+    padding-top: 4%;
+    font-size: 20px;
+}
+
+.mail{    
+    
+    font-size: 20px;    
+     margin-left: 6%;
+     padding-top: 1%;  
+}
+.information-contact-text{
+    font-size: 20px;
+    width: 360px;
+}
+.footer-general-contact{
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo-fin{
@@ -524,7 +743,6 @@ border-bottom:2px solid antiquewhite;
     width: 300px;
     height: 100px;
     margin-left: 38%;
-
 }
 .footer-general{
     display: flex;
@@ -545,13 +763,21 @@ border-bottom:2px solid antiquewhite;
     text-align: center;
 }
 .adress{
-   
-    font-size: 25px;
-    font-family: 'Tajawal', sans-serif;
-    line-height: 30px;
-    text-align: center;
+  
+   font-size: 25px;
+   font-family: 'Tajawal', sans-serif;
+   line-height: 30px;
+   text-align: center;
     
 }
+
+/* .image-fin{
+    background-image: url(./image/imagefin.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0.8); 
+    margin-top: -12%;
+} */
 
 .footer{
     padding-top: 6%;
@@ -559,8 +785,6 @@ border-bottom:2px solid antiquewhite;
     width: 60%;
 }
 #my_osm_widget_map { 
-    width: 60%;
-    height: 350px;
-    border-radius: 20px;
-	
+    /* width: 50%; */
+    height: 300px;
 }
