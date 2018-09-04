@@ -4,25 +4,40 @@
         <title>Les tarifs</title>
         <link rel="stylesheet" href="three-in-shop.css">
         <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
         <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
     </head>
     
     <body>
-            <div id="nav-bars">
-                    <div id="menu">
-                      <ul>
-                        <li><a href="index.html">Magasin</a></li>
-                        <li><a href="les-velos.html">Vélos</a></li>
-                        <li class="selected">Atelier</li>
-                        <li><a href="contact.html">Contact</a></li>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">Three-in-shop</a>
+                  
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Magasin</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class ="nav-link" href="les-velos.html">Vélos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="tarifs-atelier.html">Atelier</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li> 
                       </ul>
-                    </div>
-                    <div class="logo-velo">
-                     <img src="image/logo.png" alt=""> 
-                    </div>
-                  </div>
+                    </div> 
+                </nav>
 
        
         <div class="first-titre">NOS TARIFS</div>

@@ -222,10 +222,10 @@ ul{
 }
 /*page-les-vélos*/
 
-.background-container-two{
+.background-essaitest-two{
     background-image: url(./image/photo1.jpg);
     height: 800px;
-    background-attachment: fixed;
+  
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -251,7 +251,7 @@ ul{
     background-color:black;
     opacity:0.7;
     width: 400px;
-    height: 146px;
+    height: 268px;
     text-align: center;
     font-size: 40px;
     padding-top: 30%;
@@ -281,7 +281,7 @@ ul{
     background-color:black;
     opacity:0.7;
     width: 400px;
-    height: 146px;
+    height: 268px;
     text-align: center;
     font-size: 40px;
     padding-top: 30%;
@@ -312,7 +312,7 @@ ul{
     background-color:black;
     opacity:0.7;
     width: 400px;
-    height: 146px;
+    height: 268px;
     text-align: center;
     font-size: 40px;
     padding-top: 30%;
@@ -342,7 +342,7 @@ ul{
     background-color:black;
     opacity:0.7;
     width: 400px;
-    height: 180px;
+    height: 300px;
     text-align: center;
     font-size: 40px;
     padding-top: 30%;
@@ -372,7 +372,7 @@ ul{
     background-color:black;
     opacity:0.7;
     width: 400px;
-    height: 180px;
+    height: 300px;
     text-align: center;
     font-size: 40px;
     padding-top: 30%;

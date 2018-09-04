@@ -17,16 +17,16 @@ L.marker([48.887284, 2.510894]).addTo(mymap);
 
 //effet navbars//
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-bars").style.top = "0";
-  } else {
-    document.getElementById("nav-bars").style.top = "-170px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("nav-bars").style.top = "0";
+//   } else {
+//     document.getElementById("nav-bars").style.top = "-170px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 //carousel photo//
 
